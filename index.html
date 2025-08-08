@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Paid Advertising Agency - Scale Your Business with High-ROI Ads</title>
+    <meta name="description"
+        content="Professional paid advertising agency delivering proven ROI through data-driven campaigns across multiple platforms. Scale your business today.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1F2937',
+                        secondary: '#0EA5E9'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1F2937;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.05), rgba(255, 255, 255, 1));
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #FFFFFF, #F8FAFC);
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(14, 165, 233, 0.3);
+            box-shadow: 0 8px 30px rgba(14, 165, 233, 0.1);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(2rem);
+            transition: all 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-0.25rem);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #14B8A6, #0D9488);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .accordion-content.active {
+            max-height: 200px;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #14B8A6;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background-color: #14B8A6;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #14B8A6, #0D9488);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(20, 184, 166, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
+        }
+
+        .cta-button-secondary {
+            background: linear-gradient(135deg, #F59E0B, #D97706);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .cta-button-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+
+<body class="bg-primary text-white font-inter">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="w-full px-6 py-4">
+            <div class="text-center mb-4">
+                <div class="font-['Pacifico'] text-2xl text-primary">logo</div>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <a href="#home" class="nav-link text-gray-600 hover:text-secondary transition-colors">Home</a>
+                <a href="#why-us" class="nav-link text-gray-600 hover:text-secondary transition-colors">Why Us</a>
+                <a href="#case-studies" class="nav-link text-gray-600 hover:text-secondary transition-colors">Case
+                    Studies</a>
+                <a href="#process" class="nav-link text-gray-600 hover:text-secondary transition-colors">Process</a>
+                <a href="#faq" class="nav-link text-gray-600 hover:text-secondary transition-colors">FAQ</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-secondary transition-colors">Contact</a>
+                <a href="https://wa.me/1234567890?text=Hi, I'd like to book a free consultation call"
+                    class="cta-button text-white px-6 py-2 !rounded-button font-semibold whitespace-nowrap">
+                    Book a Free Call
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="min-h-screen flex items-center justify-center pt-32 pb-20 px-6"
+        style="background-image: url('https://readdy.ai/api/search-image?query=modern%20bright%20airy%20digital%20marketing%20office%20with%20white%20walls%20and%20large%20windows%2C%20multiple%20screens%20showing%20advertising%20analytics%20and%20campaign%20data%2C%20professional%20team%20working%20on%20laptops%2C%20clean%20minimalist%20workspace%20with%20light%20wood%20and%20teal%20accent%20colors%2C%20natural%20lighting%20creating%20professional%20ambiance%2C%20wide%20angle%20view%20showing%20collaborative%20environment%2C%20premium%20office%20interior%20design%20with%20glass%20walls%20and%20modern%20furniture&width=1920&height=1080&seq=hero-bg-001&orientation=landscape'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="absolute inset-0 bg-white/90"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight text-primary">
+                Scale Your Business with
+                <span class="gradient-text">High-ROI Paid Ads</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Transform your marketing investment into predictable revenue growth with our data-driven advertising
+                strategies across all major platforms
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="https://wa.me/1234567890?text=Hi, I'm interested in scaling my business with paid ads. Can we schedule a consultation?"
+                    class="cta-button text-white px-8 py-4 !rounded-button text-lg font-semibold whitespace-nowrap hover-lift flex items-center gap-3">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <i class="ri-whatsapp-line text-lg"></i>
+                    </div>
+                    WhatsApp Us
+                </a>
+                <a href="tel:+1234567890"
+                    class="cta-button-secondary text-white px-8 py-4 !rounded-button text-lg font-semibold whitespace-nowrap hover-lift flex items-center gap-3">
+                    <div class="w-5 h-5 flex items-center justify-center">
+                        <i class="ri-phone-line text-lg"></i>
+                    </div>
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-primary">Why Businesses Choose Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We deliver measurable results through proven strategies, cutting-edge technology, and dedicated
+                    expertise
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center fade-in hover-lift p-8 feature-card rounded-2xl">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/10 rounded-xl">
+                        <i class="ri-line-chart-line text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Proven ROI</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Average 4.2x return on ad spend across all client campaigns with transparent reporting and
+                        measurable outcomes
+                    </p>
+                </div>
+                <div class="text-center fade-in hover-lift p-8 feature-card rounded-2xl">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/10 rounded-xl">
+                        <i class="ri-database-line text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Data-Driven Campaigns</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Advanced analytics and AI-powered optimization ensure every dollar is spent efficiently for
+                        maximum impact
+                    </p>
+                </div>
+                <div class="text-center fade-in hover-lift p-8 feature-card rounded-2xl">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/10 rounded-xl">
+                        <i class="ri-global-line text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Multi-Platform Expertise</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Master-level proficiency across Google Ads, Facebook, Instagram, LinkedIn, TikTok, and emerging
+                        platforms
+                    </p>
+                </div>
+                <div class="text-center fade-in hover-lift p-8 feature-card rounded-2xl">
+                    <div class="w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/10 rounded-xl">
+                        <i class="ri-user-heart-line text-3xl text-secondary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Dedicated Account Managers</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Personal account manager with direct communication, weekly reports, and strategic consultation
+                        calls
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="case-studies" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-primary">Success Stories</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Real results from real businesses across diverse industries
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-white card-shadow rounded-2xl hover-lift fade-in border border-gray-100">
+                    <div class="text-5xl font-bold gradient-text mb-4">+347%</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">ROI in 90 Days</h3>
+                    <p class="text-gray-600 mb-4">E-commerce Fashion Brand</p>
+                    <p class="text-sm text-gray-500">
+                        Transformed struggling online store into profitable business through strategic Google Shopping
+                        and Facebook campaigns
+                    </p>
+                </div>
+                <div class="text-center p-8 bg-white card-shadow rounded-2xl hover-lift fade-in border border-gray-100">
+                    <div class="text-5xl font-bold gradient-text mb-4">$2.8M</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Revenue Generated</h3>
+                    <p class="text-gray-600 mb-4">SaaS Technology Company</p>
+                    <p class="text-sm text-gray-500">
+                        Scaled B2B lead generation from $50K to $2.8M annual revenue through LinkedIn and Google Ads
+                        optimization
+                    </p>
+                </div>
+                <div class="text-center p-8 bg-white card-shadow rounded-2xl hover-lift fade-in border border-gray-100">
+                    <div class="text-5xl font-bold gradient-text mb-4">-68%</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-primary">Cost Per Acquisition</h3>
+                    <p class="text-gray-600 mb-4">Healthcare Services</p>
+                    <p class="text-sm text-gray-500">
+                        Reduced patient acquisition costs while increasing quality leads by 240% through targeted local
+                        campaigns
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-primary">Our Proven Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    A systematic approach to scaling your business through strategic paid advertising
+                </p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center fade-in">
+                    <div class="relative">
+                        <div class="w-20 h-20 flex items-center justify-center mx-auto mb-6 bg-secondary rounded-full">
+                            <i class="ri-lightbulb-line text-3xl text-white"></i>
+                        </div>
+                        <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-secondary/30"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Strategy</h3>
+                    <p class="text-gray-600 text-sm">
+                        Deep dive analysis of your business, competitors, and target audience to create winning
+                        strategies
+                    </p>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="relative">
+                        <div class="w-20 h-20 flex items-center justify-center mx-auto mb-6 bg-secondary rounded-full">
+                            <i class="ri-settings-line text-3xl text-white"></i>
+                        </div>
+                        <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-secondary/30"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Campaign Setup</h3>
+                    <p class="text-gray-600 text-sm">
+                        Professional campaign creation with optimized targeting, compelling creatives, and conversion
+                        tracking
+                    </p>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="relative">
+                        <div class="w-20 h-20 flex items-center justify-center mx-auto mb-6 bg-secondary rounded-full">
+                            <i class="ri-speed-line text-3xl text-white"></i>
+                        </div>
+                        <div class="hidden md:block absolute top-10 left-full w-full h-0.5 bg-secondary/30"></div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Optimization</h3>
+                    <p class="text-gray-600 text-sm">
+                        Continuous testing and refinement based on real-time data to maximize performance and ROI
+                    </p>
+                </div>
+                <div class="text-center fade-in">
+                    <div class="w-20 h-20 flex items-center justify-center mx-auto mb-6 bg-secondary rounded-full">
+                        <i class="ri-rocket-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Scaling</h3>
+                    <p class="text-gray-600 text-sm">
+                        Strategic budget increases and expansion to new platforms as we identify winning formulas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 text-primary">Let's Scale Your Business Today</h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+                Ready to transform your marketing investment into predictable revenue growth? Get started with a free
+                consultation.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="https://wa.me/1234567890?text=Hi, I'm ready to scale my business with paid advertising. Let's discuss my goals and how you can help."
+                    class="cta-button text-white px-10 py-5 !rounded-button text-xl font-semibold whitespace-nowrap hover-lift flex items-center gap-3">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-whatsapp-line text-xl"></i>
+                    </div>
+                    WhatsApp Us Now
+                </a>
+                <a href="tel:+1234567890"
+                    class="cta-button-secondary text-white px-10 py-5 !rounded-button text-xl font-semibold whitespace-nowrap hover-lift flex items-center gap-3">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-phone-line text-xl"></i>
+                    </div>
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="py-20 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-primary">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about our paid advertising services
+                </p>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl overflow-hidden fade-in card-shadow border border-gray-100">
+                    <button
+                        class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition-colors">
+                        <span class="text-lg font-semibold text-gray-800">What's your minimum ad spend
+                            requirement?</span>
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-add-line text-xl accordion-icon transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            We work with businesses spending $3,000+ per month on advertising. This ensures we can
+                            gather sufficient data for optimization and deliver meaningful results. Our management fee
+                            starts at $1,500/month.
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden fade-in card-shadow border border-gray-100">
+                    <button
+                        class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition-colors">
+                        <span class="text-lg font-semibold text-gray-800">How quickly will I see results?</span>
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-add-line text-xl accordion-icon transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            Initial results typically appear within 2-4 weeks, with significant improvements by month
+                            2-3. Full optimization and scaling usually occur by months 3-6, depending on your industry
+                            and competition level.
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden fade-in card-shadow border border-gray-100">
+                    <button
+                        class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition-colors">
+                        <span class="text-lg font-semibold text-gray-800">Which platforms do you advertise on?</span>
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-add-line text-xl accordion-icon transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            We specialize in Google Ads, Facebook/Instagram, LinkedIn, TikTok, YouTube, Microsoft Ads,
+                            and emerging platforms. We recommend the best mix based on your target audience and business
+                            goals.
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden fade-in card-shadow border border-gray-100">
+                    <button
+                        class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition-colors">
+                        <span class="text-lg font-semibold text-gray-800">Do you provide creative assets and landing
+                            pages?</span>
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-add-line text-xl accordion-icon transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            Yes, we have an in-house creative team that produces high-converting ad creatives, landing
+                            pages, and video content. This ensures your campaigns have professional, tested assets that
+                            drive results.
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden fade-in card-shadow border border-gray-100">
+                    <button
+                        class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition-colors">
+                        <span class="text-lg font-semibold text-gray-800">What kind of reporting do you provide?</span>
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-add-line text-xl accordion-icon transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="p-6 pt-0 text-gray-600">
+                            You'll receive detailed weekly reports showing key metrics, insights, and optimization
+                            actions. Monthly strategy calls review performance and plan next steps. Real-time dashboard
+                            access is also provided.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-form" class="py-20 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-primary">Get In Touch</h2>
+                <p class="text-xl text-gray-600">
+                    Ready to boost your business? Fill out the form below and we'll get back to you within 24 hours.
+                </p>
+            </div>
+            <form id="contact-us-form" class="space-y-6 fade-in" action="https://formspree.io/f/xrblovav" method="POST">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="name" name="Name" required
+                            class="w-full px-4 py-3 rounded-button border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-black"
+                            placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" id="email" name="Email" required
+                            class="w-full px-4 py-3 rounded-button border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-black"
+                            placeholder="Enter your email">
+                    </div>
+                </div>
+                <div>
+                    <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                    <input type="text" id="company" name="Company" required
+                        class="w-full px-4 py-3 rounded-button border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-black"
+                        placeholder="Enter your company name">
+                </div>
+                <div>
+                    <label for="phone-number" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                    <input type="text" id="phone-number" name="Phone" required
+                        class="w-full px-4 py-3 rounded-button border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition-colors text-black"
+                        placeholder="Enter your phone number">
+                </div>
+
+                <!-- Optional: Subject line for easier email filtering -->
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+
+                <div class="text-center">
+                    <button type="submit"
+                        class="cta-button text-white px-8 py-4 !rounded-button text-lg font-semibold whitespace-nowrap hover-lift inline-flex items-center gap-3">
+                        <span>Send Message</span>
+                        <div class="w-5 h-5 flex items-center justify-center">
+                            <i class="ri-send-plane-line"></i>
+                        </div>
+                    </button>
+                </div>
+            </form>
+
+            <div id="form-success" class="hidden text-center py-8">
+                <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-green-100 rounded-full">
+                    <i class="ri-check-line text-3xl text-green-500"></i>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Message Sent Successfully!</h3>
+                <p class="text-gray-600">We'll get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-16 px-6 border-t border-gray-100 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <div class="font-['Pacifico'] text-3xl text-primary mb-4">logo</div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Transform your business with data-driven paid advertising strategies that deliver measurable results
+                    and sustainable growth.
+                </p>
+            </div>
+            <div class="flex justify-center gap-8 mb-8">
+                <a href="https://wa.me/1234567890"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full hover:bg-secondary hover:text-white transition-colors">
+                    <i class="ri-whatsapp-line text-xl text-[#001f3f]"></i>
+                </a>
+                <a href="tel:+1234567890"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full hover:bg-secondary hover:text-white transition-colors">
+                    <i class="ri-phone-line text-xl text-[#001f3f]"></i>
+                </a>
+                <a href="mailto:hello@agency.com"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full hover:bg-secondary hover:text-white transition-colors">
+                    <i class="ri-mail-line text-xl text-[#001f3f]"></i>
+                </a>
+                <a href="#"
+                    class="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full hover:bg-secondary hover:text-white transition-colors">
+                    <i class="ri-linkedin-line text-xl text-[#001f3f]"></i>
+                </a>
+            </div>
+            <div class="text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Premium Paid Advertising Agency. All rights reserved.</p>
+                <p class="mt-2">Scaling businesses through high-ROI paid advertising campaigns.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contact-us-form').addEventListener('submit', async function (event) {
+            event.preventDefault(); // stop page reload
+
+            const form = event.target;
+            const successMessage = document.getElementById('form-success');
+            const formSection = document.getElementById('contact-us-form');
+
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    formSection.classList.add('hidden'); // hide form
+                    successMessage.classList.remove('hidden'); // show success block
+                    form.reset();
+                } else {
+                    alert("❌ Oops! Something went wrong. Please try again.");
+                }
+            } catch (error) {
+                alert("❌ Network error. Please try again.");
+            }
+        });
+    </script>
+    <script id="scroll-animations">
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+    <script id="accordion-functionality">
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionTriggers = document.querySelectorAll('.accordion-trigger');
+            accordionTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.accordion-icon');
+                    const isActive = content.classList.contains('active');
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    document.querySelectorAll('.accordion-icon').forEach(item => {
+                        item.style.transform = 'rotate(0deg)';
+                    });
+                    if (!isActive) {
+                        content.classList.add('active');
+                        icon.style.transform = 'rotate(45deg)';
+                    }
+                });
+            });
+        });
+    </script>
+    <script id="smooth-scrolling">
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const offsetTop = target.offsetTop - 100;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
